@@ -1,0 +1,71 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .contact {
+	display:flex;
+	position: relative;
+	align-items:center;
+	background-image: url("../images/immigration.jpg");
+	background-size:cover;
+	height:100vh;
+	color:#fff;
+}
+.contact img {
+	height:50px;
+	margin:0 10px;
+}
+.contact input {
+	padding:10px 20px;
+	margin:5px;
+}
+.contact input:focus {
+	outline:none;
+}
+.contact textarea {
+	height:150px;
+	padding:10px 20px;
+	margin:5px;
+}
+.contact .button {
+	text-align:center;
+	background-color:red;
+	color:#fff;
+	border:none;
+	border-redius:5px;
+	padding:20px 0;
+}
+.contact textarea:focus {
+	outline:none;
+}
+.content {
+	z-index:3;
+	display:flex;
+	width:100%;
+}
+.content .title {
+	padding:20px;
+	margin-left:10px;
+	font-size:25px;
+	border-left:5px solid red;
+}
+.left ,.right {
+	/*border:1px solid #fff;*/
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	flex:50%;
+	padding:40px;
+}
+.right div {
+	display:flex;
+	align-items:center;
+}
+.contact_overlay {
+	z-index:0;
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgb(0,0,0,.8);
+}
